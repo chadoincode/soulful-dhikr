@@ -1,7 +1,8 @@
-import Dua from './components/Dua/DuaTitleCard'
 import HomePageCard from './components/HomePage/HomePageCard'
 import Title from './components/Title'
 import MorningDhikr from './assets/morning-dhikr.png'
+import HomePageList from './components/HomePage/HomePageCardList'
+import { Category } from './types/categories'
 
 function App() {
   return (
@@ -9,10 +10,11 @@ function App() {
       <div>
         {/* <Title /> */}
         {/* <Dua /> */}
-        <HomePageCard 
+        {/* <HomePageCard 
           title={'Morning Dhikr'}
           icon={MorningDhikr}
-        />
+        /> */}
+        {/* <HomePageList m /> */}
       </div>
       
     </>
