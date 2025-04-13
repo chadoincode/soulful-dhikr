@@ -14,7 +14,7 @@ function App() {
           title={'Morning Dhikr'}
           icon={MorningDhikr}
         /> */}
-        {/* <HomePageList m /> */}
+        {/* <HomePageList /> */}
       </div>
       
     </>
