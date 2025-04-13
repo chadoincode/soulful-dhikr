@@ -1,12 +1,12 @@
-import { Routes, Route } from "react-router"
+// import { Routes, Route } from "react-router"
 import HomePage from "./pages/HomePage"
+import Header from "./components/Header"
+import iconMap from "./constant/iconMap"
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
+      <HomePage />
     </>
   )
 }
