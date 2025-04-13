@@ -4,4 +4,8 @@ type Category = {
   total: number
 }
 
-export type {Category}
+type CategoryResponse = {
+  data: Category[]
+}
+
+export type {Category, CategoryResponse}
