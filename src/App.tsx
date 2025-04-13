@@ -9,12 +9,12 @@ function App() {
   return (
     <>
       <div>
-        {/* <Title /> */}
+        <Title />
         {/* <Dua /> */}
-        <HomePageCard 
+        {/* <HomePageCard 
           title={'Morning Dhikr'}
           icon={MorningDhikr}
-        />
+        /> */}
         <HomePageContainer />
       </div>
       

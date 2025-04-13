@@ -3,17 +3,17 @@ import { Category } from "../../types/categories"
 import IconMap from "../../constant/iconMap"
 
 type HomePageListProps = {
-  menus: Category[]
+  categories: Category[]
 }
 
-const HomePageList = ({menus}: HomePageListProps) => {
+const HomePageList = ({categories}: HomePageListProps) => {
   return(
-    <div>
-      {menus.map((menu) => (
+    <div className="flex flex-col gap-1">
+      {categories.map((category) => (
         <HomePageCard 
-          key={menu.slug}
-          title={menu.name}
-          icon={IconMap[menu.slug] || ""}
+          key={category.slug}
+          title={category}
+          icon={IconMap[category.slug] || ""}
         />
       ))}
     </div>

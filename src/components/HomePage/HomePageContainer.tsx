@@ -12,7 +12,10 @@ const HomePageContainer = () => {
       try{
         setLoading(true)
         const response = await fetch('https://dua-dhikr.onrender.com/categories/', {
-          headers: {'Accept-language': 'en'}
+          // method: 'GET',
+          headers: {
+            'Accept-language': 'en'
+          }
         })
 
         if(!response.ok){
@@ -20,10 +23,11 @@ const HomePageContainer = () => {
         }
 
         const data = await response.json()
-        setMenus(data)
+        setMenus(data.data)
         setLoading(false)
       } catch(error){
         setError(error instanceof Error ? error.message : "Unknown Error")
+        console.error(error)
       } finally{
         setLoading(false)
       }
@@ -34,7 +38,7 @@ const HomePageContainer = () => {
   if(loading){
     return(
       <div>
-        <h1>Error...</h1>
+        <h1>Error</h1>
       </div>
     )
   }
@@ -50,7 +54,7 @@ const HomePageContainer = () => {
   return(
     <div>
       <HomePageList 
-        menus={menus} 
+        categories={menus}
       />
     </div>
   )
