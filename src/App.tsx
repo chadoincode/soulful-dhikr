@@ -11,10 +11,10 @@ function App() {
       <div>
         {/* <Title /> */}
         {/* <Dua /> */}
-        {/* <HomePageCard 
+        <HomePageCard 
           title={'Morning Dhikr'}
           icon={MorningDhikr}
-        /> */}
+        />
         <HomePageContainer />
       </div>
       
