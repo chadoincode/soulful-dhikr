@@ -3,6 +3,7 @@ import Title from './components/Title'
 import MorningDhikr from './assets/morning-dhikr.png'
 import HomePageList from './components/HomePage/HomePageCardList'
 import { Category } from './types/categories'
+import HomePageContainer from './components/HomePage/HomePageContainer'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           title={'Morning Dhikr'}
           icon={MorningDhikr}
         /> */}
-        {/* <HomePageList /> */}
+        <HomePageContainer />
       </div>
       
     </>
