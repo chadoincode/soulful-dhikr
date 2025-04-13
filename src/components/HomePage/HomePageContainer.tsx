@@ -32,7 +32,11 @@ const HomePageContainer = () => {
   }, [])
 
   if(loading){
-    
+    return(
+      <div>
+        <h1>Error...</h1>
+      </div>
+    )
   }
 
   if(error){
