@@ -1,6 +1,6 @@
 import HomePageCard from "./HomePageCard"
 import { Category } from "../../types/categories"
-import MorningDhikr from '../../assets/morning-dhikr.png'
+import IconMap from "../../constant/iconMap"
 
 type HomePageListProps = {
   menus: Category[]
@@ -13,7 +13,7 @@ const HomePageList = ({menus}: HomePageListProps) => {
         <HomePageCard 
           key={menu.slug}
           title={menu.name}
-          icon={MorningDhikr}
+          icon={IconMap[menu.slug] || ""}
         />
       ))}
     </div>
