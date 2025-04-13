@@ -1,14 +1,12 @@
-import Title from './components/Title'
-import HomePageContainer from './components/HomePage/HomePageContainer'
+import { Routes, Route } from "react-router"
+import HomePage from "./pages/HomePage"
 
 function App() {
   return (
     <>
-      <div>
-        <Title />
-        <HomePageContainer />
-      </div>
-      
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </>
   )
 }
