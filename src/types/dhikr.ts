@@ -1,5 +1,5 @@
 type DhikrResponse = {
-  data: Dhikr
+  data: Dhikr[]
 }
 
 type Dhikr = {
