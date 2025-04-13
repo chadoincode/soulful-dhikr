@@ -8,7 +8,7 @@ type HomePageListProps = {
 
 const HomePageList = ({categories}: HomePageListProps) => {
   return(
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-3">
       {categories.map((category) => (
         <HomePageCard 
           key={category.slug}
