@@ -1,7 +1,3 @@
-type DhikrResponse = {
-  data: Dhikr[]
-}
-
 type Dhikr = {
   id: number
   title: string
@@ -11,4 +7,4 @@ type Dhikr = {
   source: string 
 }
 
-export type {Dhikr, DhikrResponse}
+export type {Dhikr}

@@ -1,7 +1,3 @@
-type DuaResponse = {
-  data: Dua[]
-}
-
 type Dua = {
   id: number
   title: string
@@ -10,4 +6,4 @@ type Dua = {
   source: string
 }
 
-export type {Dua, DuaResponse}
+export type {Dua}
