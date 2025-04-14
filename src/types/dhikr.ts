@@ -3,7 +3,7 @@ type Dhikr = {
   title: string
   arabic: string
   translation: string
-  fawaid: string
+  notes: string
   source: string 
 }
 

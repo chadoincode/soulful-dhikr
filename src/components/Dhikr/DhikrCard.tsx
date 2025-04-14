@@ -10,7 +10,7 @@ const DhikrCard = ({dhikr}: DhikrCardProps) => {
       <h1>{dhikr.title}</h1>
       <p>{dhikr.arabic}</p>
       <p>{dhikr.translation}</p>
-      <p>{dhikr.fawaid}</p>
+      <p>{dhikr.notes}</p>
       <p>{dhikr.source}</p>
     </div>
   )
