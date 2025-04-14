@@ -1,6 +1,7 @@
 type Dhikr = {
   id: number
   title: string
+  category: string
   arabic: string
   translation: string
   fawaid: string | null

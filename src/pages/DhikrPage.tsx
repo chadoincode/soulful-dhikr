@@ -1,9 +1,12 @@
+import DhikrContainer from "../components/Dhikr/DhikrContainer";
 import DhikrList from "../components/Dhikr/DhikrList";
 
 const DhikrPage = () => {
   return(
     <div>
-      <DhikrList />
+      <DhikrContainer />
     </div>
   )
 }
+
+export default DhikrPage
