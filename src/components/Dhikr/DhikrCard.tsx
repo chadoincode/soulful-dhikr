@@ -11,6 +11,7 @@ const DhikrCard = ({dhikr}: DhikrCardProps) => {
       <p>{dhikr.arabic}</p>
       <p>{dhikr.translation}</p>
       <p>{dhikr.notes}</p>
+      <p>{dhikr.fawaid || null}</p>
       <p>{dhikr.source}</p>
     </div>
   )
