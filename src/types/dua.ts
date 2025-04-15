@@ -3,6 +3,7 @@ type Dua = {
   title: string
   arabic: string
   translation: string
+  category: string
   source: string
 }
 

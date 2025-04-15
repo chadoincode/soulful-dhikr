@@ -1,12 +1,19 @@
+import { Dua } from "../../types/dua"
+import { Link } from "react-router"
+
 type DuaTitleCardProps = {
-  icon: string
-  
+  title: Dua
 }
 
-const DuaTitleCard = () => {
+const DuaTitleCard = ({title}: DuaTitleCardProps) => {
   return(
-    <div className="">
-      <h1>{}</h1>
-    </div>
+    <Link to={`dua/${title}`}>
+      <div>
+        <p>{title.title}</p>
+        <img src="" alt="chevron right" />
+      </div>
+    </Link>
   )
 }
+
+export default DuaTitleCard
