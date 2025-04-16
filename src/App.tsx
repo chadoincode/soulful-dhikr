@@ -1,12 +1,13 @@
 import { Route, Routes } from "react-router"
 import HomePage from "./pages/HomePage"
+import Selected
 
 function App() {
   return (
     <>
       <Routes>
-        <Route />
-        <HomePage />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/:slug" element={<Select} />
       </Routes>
     </>
   )

@@ -1,6 +1,6 @@
 import DuaTitleContainer from "../components/Dua/DuaTitleContainer";
 
-const DuaPage = () => {
+const SelectedDuaPage = () => {
   return(
     <div>
       <DuaTitleContainer 
@@ -10,4 +10,4 @@ const DuaPage = () => {
   )
 }
 
-export default DuaPage
+export default SelectedDuaPage
