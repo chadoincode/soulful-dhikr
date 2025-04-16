@@ -4,6 +4,7 @@ type Dua = {
   arabic: string
   translation: string
   category: string
+  fawaid: string | null
   source: string
 }
 
