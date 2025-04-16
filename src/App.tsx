@@ -1,14 +1,13 @@
 import { Route, Routes } from "react-router"
 import HomePage from "./pages/HomePage"
-import Selected
+import SelectedDuaPage from "./pages/SelectedDuaPage"
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/:slug" element={<Select} />
-      </Routes>
+        {/* <HomePage /> */}
+        <SelectedDuaPage />
+
     </>
   )
 }
