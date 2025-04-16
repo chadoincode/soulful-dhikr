@@ -6,9 +6,10 @@ import DailyDuaPage from "./pages/DailyDuaPage"
 function App() {
   return (
     <>
-        {/* <HomePage /> */}
-        <DailyDuaPage />
-
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/:category/:id" element={<SelectedDuaPage />} />
+      </Routes>
     </>
   )
 }
