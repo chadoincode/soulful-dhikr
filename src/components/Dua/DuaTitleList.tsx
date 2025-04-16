@@ -7,7 +7,7 @@ type DuaTitleListProps = {
 
 const DuaTitleList = ({duas}: DuaTitleListProps) => {
   return(
-    <div>
+    <div className="flex flex-col gap-1">
       {duas.map((dua) => (
         <DuaTitleCard 
           key={dua.id}

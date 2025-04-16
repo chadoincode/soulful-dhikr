@@ -9,9 +9,9 @@ type DuaTitleCardProps = {
 const DuaTitleCard = ({title}: DuaTitleCardProps) => {
   return(
     <Link to={`dua/${title}`}>
-      <div className="flex justify-between items-center cursor-pointer gap-5 bg-secondary w-[330px] py-2.5 px-5 rounded-3xl">
+      <div className="flex justify-between items-center cursor-pointer bg-secondary w-[330px] py-2.5 px-5 rounded-3xl">
         <p className="text-sm font-bold text-background text-left">{title.title}</p>
-        <ChevronRight size={30} width={50}/>
+        <ChevronRight size={30} width={50} />
       </div>
     </Link>
   )
