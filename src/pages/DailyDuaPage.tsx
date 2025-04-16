@@ -9,3 +9,5 @@ const DailyDuaPage = () => {
     </>
   )
 }
+
+export default DailyDuaPage
