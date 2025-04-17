@@ -14,6 +14,7 @@ const DuaTitleContainer = () => {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
+    if (!slug) return
     const fetchDuas = async () => {
       try{
         setLoading(true)

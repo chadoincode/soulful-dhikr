@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router"
 import HomePage from "./pages/HomePage"
-import DailyDuaPage from "./pages/DailyDuaPage"
 import DetailDuaCard from "./components/DetailDua/DetailDuaCard"
 import DuaTitleContainer from "./components/Dua/DuaTitleContainer"
 import DuaTitleList from "./components/Dua/DuaTitleList"
@@ -12,6 +11,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/daily-dua" element={<DuaPage />} />
       </Routes>
         {/* <Route path="/" element={<HomePage />} /> */}
         {/* <SelectedDuaPage /> */}

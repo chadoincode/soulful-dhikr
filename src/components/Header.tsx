@@ -1,17 +1,14 @@
 import ChevronLeft from '../assets/chevron-left.png';
-import { Category } from '../types/categories';
 
 type HeaderProps = {
-  icon: string
-  title: Category
+  title: string
 }
 
-const Header = ({icon, title}: HeaderProps) => {
+const Header = ({title}: HeaderProps) => {
   return(
     <div>
       <img src={ChevronLeft} alt="chevron" />
-      <img src={icon} alt="icon" />
-      <h1>{title.name}</h1>
+      <h1>{title}</h1>
     </div>
   )
 }

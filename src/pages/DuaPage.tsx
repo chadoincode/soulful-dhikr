@@ -6,10 +6,10 @@ type DuaPageProps = {
   title: Category
 }
 
-const DuaPage = ({title}: DuaPageProps) => {
+const DuaPage = () => {
   return(
     <div>
-      <Header icon="icon" title={title} />
+      {/* <Header icon="icon" title={title} /> */}
       <DuaTitleContainer />
     </div>
   )

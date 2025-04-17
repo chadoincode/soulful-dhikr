@@ -11,6 +11,7 @@ const DuaTitleList = ({duas}: DuaTitleListProps) => {
       {duas.map((dua) => (
         <DuaTitleCard 
           key={dua.id}
+          category={dua.category}
           title={dua}
         />
       ))}
