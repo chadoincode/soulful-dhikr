@@ -1,7 +1,7 @@
 import { Dua } from "../../types/dua";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import DetailDuaCard from "./DetailDuaCard";
+import DetailDua from "./DetailDua";
 
 const DetailDuaContainer = () => {
   const {slug, id} = useParams()
@@ -10,6 +10,7 @@ const DetailDuaContainer = () => {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
+    if (!slug || !id) return;
     const fetchDua = async () => {
       try{
         setLoading(true)
@@ -51,7 +52,7 @@ const DetailDuaContainer = () => {
 
   return(
     <div>
-      <DetailDuaCard 
+      <DetailDua
         dua={dua as Dua}
       />
     </div>

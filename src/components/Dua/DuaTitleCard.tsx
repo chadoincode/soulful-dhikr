@@ -8,7 +8,7 @@ type DuaTitleCardProps = {
 
 const DuaTitleCard = ({title}: DuaTitleCardProps) => {
   return(
-    <Link to={`${title.category}/${title.id}`}>
+    <Link to={`/${title.category}/${title.id}`}>
       <div className="flex justify-between items-center cursor-pointer bg-secondary w-[330px] py-2.5 px-5 rounded-3xl">
         <div className="w-[264px]">
           <p className="text-sm font-bold text-background text-left">{title.title}</p>
