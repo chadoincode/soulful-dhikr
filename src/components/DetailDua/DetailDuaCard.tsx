@@ -6,11 +6,11 @@ type DetailDuaCardProps = {
 
 const DetailDuaCard = ({dua}: DetailDuaCardProps) => {
   return(
-    <div>
-      <p>{dua.arabic}</p>
-      <p>{dua.translation}</p>
-      <p>{dua.fawaid}</p>
-      <p>{dua.source}</p>
+    <div className="flex flex-col gap-2.5 bg-secondary rounded-3xl py-2.5 px-4">
+      <p className="font-semibold font-arabic text-right text-lg">{dua.arabic}</p>
+      <p className="font-medium text-left text-sm">{dua.translation}</p>
+      <p className="font-medium text-left text-sm italic">{dua.fawaid}</p>
+      <p className="font-medium text-left text-xs">{dua.source}</p>
     </div>
   )
 }

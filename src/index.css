@@ -9,6 +9,7 @@
   --color-light-gradient: linear-gradient(180deg, #C4EA57 0%, #7BF179 100%);
   --color-dark-gradient: linear-gradient(180deg, #132519 0%, #355935 100%);
   --font-display: 'Sora', sans-serif; 
+  --font-arabic: 'Noto Sans Arabic', sans-serif;
 }
 
 body {
