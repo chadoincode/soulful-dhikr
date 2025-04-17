@@ -2,7 +2,6 @@ import ChevronLeft from '../assets/chevron-left.png';
 import { Category } from '../types/categories';
 
 type HeaderProps = {
-  chevron: string
   icon: string
   title: Category
 }
