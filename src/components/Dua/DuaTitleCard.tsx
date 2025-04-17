@@ -3,12 +3,13 @@ import { Dua } from "../../types/dua"
 import { Link } from "react-router"
 
 type DuaTitleCardProps = {
+  category: string
   title: Dua
 }
 
-const DuaTitleCard = ({title}: DuaTitleCardProps) => {
+const DuaTitleCard = ({category, title}: DuaTitleCardProps) => {
   return(
-    <Link to={`${title.id}`}>
+    <Link to={`/${category}/${title.id}`}>
       <div className="flex justify-between items-center cursor-pointer bg-secondary w-[330px] py-2.5 px-5 rounded-3xl">
         <div className="w-[264px]">
           <p className="text-sm font-bold text-background text-left">{title.title}</p>

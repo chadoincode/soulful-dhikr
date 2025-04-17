@@ -3,12 +3,12 @@ import { Dua } from "../../types/dua";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 
-type DuaTitleContainerProps = {
-  slug: string
-}
+// type DuaTitleContainerProps = {
+//   slug: string
+// }
 
-const DuaTitleContainer = ({slug}: DuaTitleContainerProps) => {
-  // const {slug} = useParams<{slug: string}>()
+const DuaTitleContainer = () => {
+  const {slug} = useParams<{slug: string}>()
   const [duas, setDuas] = useState<Dua[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -37,7 +37,7 @@ const DuaTitleContainer = ({slug}: DuaTitleContainerProps) => {
       }
     }
     fetchDuas()
-  }, [slug])
+  }, [])
 
   if(loading){
     return(
