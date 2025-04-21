@@ -1,6 +1,6 @@
 import DetailDuaContainer from "../components/DetailDua/DetailDuaContainer";
 
-const  DetailDuaPage = () => {
+const DetailDuaPage = () => {
   return(
     <div>
       <DetailDuaContainer />
