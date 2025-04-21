@@ -5,6 +5,7 @@ type Dua = {
   translation: string
   category: string
   fawaid: string | null
+  notes: string | null
   source: string
 }
 
