@@ -1,4 +1,5 @@
-import ChevronLeft from '../assets/chevron-left.png';
+import {ChevronLeft} from "lucide-react";
+import { Link } from 'react-router';
 
 type HeaderProps = {
   title: string
@@ -6,9 +7,11 @@ type HeaderProps = {
 
 const Header = ({title}: HeaderProps) => {
   return(
-    <div>
-      <img src={ChevronLeft} alt="chevron" />
-      <h1>{title}</h1>
+    <div className="flex py-5">
+      <Link to={"/"}>
+        <ChevronLeft size={30} width={50} color="#C4EA57" />
+      </Link>
+      <h1 className="text-secondary text-lg font-bold text-center px-3">{title}</h1>
     </div>
   )
 }
