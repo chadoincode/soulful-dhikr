@@ -10,7 +10,7 @@ const DuaTitleCard = ({title}: DuaTitleCardProps) => {
   return(
     <Link to={`/${title.category}/${title.id}`}>
       <div className="flex justify-between items-center cursor-pointer bg-secondary w-[330px] h-[60px] py-2.5 px-5 rounded-3xl md:w-[600px]">
-        <div className="w-[264px]">
+        <div>
           <p className="text-sm font-bold text-background text-left line-clamp-2">{title.title}</p>
         </div>
         <ChevronRight size={30} width={50} />
