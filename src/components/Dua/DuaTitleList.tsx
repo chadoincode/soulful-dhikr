@@ -23,7 +23,7 @@ const DuaTitleList = ({duas}: DuaTitleListProps) => {
   const title = pageTitles[slug || ""] || "Dua Page";
 
   return(
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-1 mb-7">
       <Link to={"/"}>
         <Header title={title}/>
       </Link>
