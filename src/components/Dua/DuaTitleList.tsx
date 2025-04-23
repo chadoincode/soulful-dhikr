@@ -1,12 +1,10 @@
 import DuaTitleCard from "./DuaTitleCard";
 import { Dua } from "../../types/dua";
-import { Category } from "../../types/categories";
 import Header from "../Header";
 import { Link } from "react-router";
 import { useParams } from "react-router";
 
 type DuaTitleListProps = {
-  title: Category  
   duas: Dua[]
 }
 

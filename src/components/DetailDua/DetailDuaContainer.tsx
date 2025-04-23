@@ -2,6 +2,7 @@ import { Dua } from "../../types/dua";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import DetailDua from "./DetailDua";
+import Loader from "../Loader";
 
 const DetailDuaContainer = () => {
   const {slug, id} = useParams()
@@ -37,7 +38,8 @@ const DetailDuaContainer = () => {
   if(loading){
     return(
       <div>
-        <h1>Loading</h1>
+        <Loader  />
+        <svg width="40"><use href="#spin" fill="#fff" /></svg>
       </div>
     )
   }

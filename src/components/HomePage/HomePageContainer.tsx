@@ -1,6 +1,7 @@
 import HomePageList from "./HomePageCardList";
 import type { Category } from "../../types/categories";
 import { useEffect, useState } from "react";
+import Loader from "../Loader";
 
 const HomePageContainer = () => {
   const [menus, setMenus] = useState<Category[]>([])
@@ -38,7 +39,7 @@ const HomePageContainer = () => {
   if(loading){
     return(
       <div>
-        <h1>Error</h1>
+        <Loader />
       </div>
     )
   }

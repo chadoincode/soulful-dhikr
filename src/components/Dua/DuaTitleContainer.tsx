@@ -2,6 +2,7 @@ import DuaTitleList from "./DuaTitleList";
 import { Dua } from "../../types/dua";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
+import Loader from "../Loader";
 
 // type DuaTitleContainerProps = {
 //   slug: string
@@ -43,7 +44,7 @@ const DuaTitleContainer = () => {
   if(loading){
     return(
       <div>
-        <h1>Loading...</h1>
+        <Loader />
       </div>
     )
   }
