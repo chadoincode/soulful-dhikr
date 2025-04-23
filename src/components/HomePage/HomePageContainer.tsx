@@ -46,8 +46,8 @@ const HomePageContainer = () => {
 
   if(error){
     return(
-      <div>
-        <h1>Error</h1>
+      <div className="mt-[100%]">
+        <h1 className="text-4xl font-bold text-red-600">Error</h1>
       </div>
     )
   }
