@@ -38,7 +38,7 @@ const HomePageContainer = () => {
 
   if(loading){
     return(
-      <div>
+      <div className="mt-[100%]">
         <Loader />
       </div>
     )
