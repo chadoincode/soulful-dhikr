@@ -1,12 +1,16 @@
 type ButtonProps = {
   text: string
+  handleClick: () => void
 }
 
-const Button = ({text}: ButtonProps) => {
+const Button = ({text, handleClick}: ButtonProps) => {
   return(
-    <div className="bg-secondary w-[100px] md:w-[200px] rounded-lg p-3 cursor-pointer">
+    <button 
+      className="bg-secondary w-[100px] md:w-[200px] rounded-lg p-3 cursor-pointer"
+      onClick={handleClick}
+    >
       <p className="text-background text-lg font-semibold">{text}</p>
-    </div>
+    </button>
   )
 }
 
