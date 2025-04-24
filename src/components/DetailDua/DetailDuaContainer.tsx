@@ -1,6 +1,7 @@
 import { Dua } from "../../types/dua";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import Button from "../Button";
 import DetailDua from "./DetailDua";
 import Loader from "../Loader";
 
@@ -57,6 +58,10 @@ const DetailDuaContainer = () => {
       <DetailDua
         dua={dua as Dua}
       />
+      <div className="mt-5 flex flex-row justify-between">
+        <Button text="Previous" />
+        <Button text="Next" />
+      </div>
     </div>
   )
 }
