@@ -5,13 +5,16 @@ import DetailDua from "./DetailDua";
 import Loader from "../Loader";
 import Button from "../Button";
 
-const DetailDuaContainer = () => {
+type DetailDuaContainerProps = {
+  duaList: Dua[]
+}
+
+const DetailDuaContainer = ({duaList}: DetailDuaContainerProps) => {
   const {slug, id} = useParams()
   const [dua, setDua] = useState<Dua | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const navigate = useNavigate()
-  const duaList: Dua[] = []
   const currentIndex = duaList.findIndex((item) => item.id === Number(id))
 
   useEffect(() => {

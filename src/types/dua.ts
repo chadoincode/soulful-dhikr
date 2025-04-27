@@ -9,4 +9,8 @@ type Dua = {
   source: string
 }
 
-export type {Dua}
+type Duas = {
+  DuaList: Dua[]
+}
+
+export type {Dua, Duas}
