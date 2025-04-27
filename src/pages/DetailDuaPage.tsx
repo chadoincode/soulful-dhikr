@@ -1,5 +1,4 @@
 import DetailDuaContainer from "../components/DetailDua/DetailDuaContainer";
-import { Duas } from "../types/dua";
 
 const DetailDuaPage = () => {
   return(
