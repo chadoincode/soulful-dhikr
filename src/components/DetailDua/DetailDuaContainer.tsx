@@ -5,17 +5,12 @@ import DetailDua from "./DetailDua";
 import Loader from "../Loader";
 import Button from "../Button";
 
-type DetailDuaContainerProps = {
-  duaList: Dua[]
-}
-
-const DetailDuaContainer = ({duaList}: DetailDuaContainerProps) => {
+const DetailDuaContainer = () => {
   const {slug, id} = useParams()
   const [dua, setDua] = useState<Dua | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const navigate = useNavigate()
-  const currentIndex = duaList.findIndex((item) => item.id === Number(id))
 
   useEffect(() => {
     if (!slug || !id) return;
@@ -40,7 +35,6 @@ const DetailDuaContainer = ({duaList}: DetailDuaContainerProps) => {
       }
     }
     fetchDua()
-    console.log(duaList)
   }, [slug, id])
 
   if(loading){
@@ -52,6 +46,8 @@ const DetailDuaContainer = ({duaList}: DetailDuaContainerProps) => {
     )
   }
 
+  // const currentIndex = duaList.findIndex((item) => item.id == dua?.id)
+
   if(error){
     return(
       <div className="mt-[100%]">
@@ -60,31 +56,31 @@ const DetailDuaContainer = ({duaList}: DetailDuaContainerProps) => {
     )
   }
 
-  const handlePrev = () => {
-    if(currentIndex > 0){
-      const prevId = duaList[currentIndex - 1].id
-      navigate(`${slug}/${prevId}`)
-    }
-  }
+  // const handlePrev = () => {
+  //   if(currentIndex > 0){
+  //     const prevId = duaList[currentIndex - 1].id
+  //     navigate(`${prevId}`)
+  //   }
+  // }
 
-  const handleNext = () => {
-    if(currentIndex < duaList.length - 1){
-      const nextId = duaList[currentIndex + 1].id
-      navigate(`${slug}/${nextId}`)
-    } else{
-      console.log('error')
-    }
-  }
+  // const handleNext = () => {
+  //   if(currentIndex < duaList.length - 1){
+  //     const nextId = duaList[currentIndex - 1].id
+  //     navigate(`${nextId}`)
+  //   }
+  // }
 
   return(
     <div>
       <DetailDua
         dua={dua as Dua}
       />
-      <div className="flex flex-row justify-between mt-10 mb-5">
-        <Button handleClick={handlePrev} text="Previous" />
-        <Button handleClick={handleNext} text="Next" />
-      </div>
+      {/* <div className="flex flex-row justify-between mt-10 mb-5">
+        <Button 
+          text="Previous" 
+          handleClick={handlePrev} />
+        <Button text="Next" handleClick={handleNext} />
+      </div> */}
     </div>
   )
 }
