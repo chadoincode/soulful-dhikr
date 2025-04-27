@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import DetailDua from "./DetailDua";
 import Loader from "../Loader";
+import Button from "../Button";
 
 const DetailDuaContainer = () => {
   const {slug, id} = useParams()
@@ -10,6 +11,8 @@ const DetailDuaContainer = () => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const navigate = useNavigate()
+  const duaList: Dua[] = []
+  const currentIndex = duaList.findIndex((item) => item.id === Number(id))
 
   useEffect(() => {
     if (!slug || !id) return;
@@ -34,6 +37,7 @@ const DetailDuaContainer = () => {
       }
     }
     fetchDua()
+    console.log(duaList)
   }, [slug, id])
 
   if(loading){
@@ -53,11 +57,31 @@ const DetailDuaContainer = () => {
     )
   }
 
+  const handlePrev = () => {
+    if(currentIndex > 0){
+      const prevId = duaList[currentIndex - 1].id
+      navigate(`${slug}/${prevId}`)
+    }
+  }
+
+  const handleNext = () => {
+    if(currentIndex < duaList.length - 1){
+      const nextId = duaList[currentIndex + 1].id
+      navigate(`${slug}/${nextId}`)
+    } else{
+      console.log('error')
+    }
+  }
+
   return(
     <div>
       <DetailDua
         dua={dua as Dua}
       />
+      <div className="flex flex-row justify-between mt-10 mb-5">
+        <Button handleClick={handlePrev} text="Previous" />
+        <Button handleClick={handleNext} text="Next" />
+      </div>
     </div>
   )
 }
