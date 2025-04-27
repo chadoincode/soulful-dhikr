@@ -1,15 +1,10 @@
 import { Dua } from "../../types/dua";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
-import Button from "../Button";
 import DetailDua from "./DetailDua";
 import Loader from "../Loader";
 
-type DetailDuaContainerProps = {
-  duaList: Dua[]
-}
-
-const DetailDuaContainer = ({duaList}: DetailDuaContainerProps) => {
+const DetailDuaContainer = () => {
   const {slug, id} = useParams()
   const [dua, setDua] = useState<Dua | null>(null)
   const [loading, setLoading] = useState(true)
@@ -58,31 +53,11 @@ const DetailDuaContainer = ({duaList}: DetailDuaContainerProps) => {
     )
   }
 
-  const currentIndex = duaList.findIndex((item) => item.id === Number(id))
-
-  const handlePrevious = () => {
-    if(currentIndex > 0){
-      const prevId = duaList[currentIndex - 1].id
-      navigate(`/${slug}/${prevId}`)
-    }
-  }
-
-  const handleNext = () => {
-    if(currentIndex < duaList.length - 1){
-      const nextId = duaList[currentIndex + 1].id
-      navigate(`/${slug}/${nextId}`)
-    }
-  }
-
   return(
     <div>
       <DetailDua
         dua={dua as Dua}
       />
-      <div className="mt-5 flex flex-row justify-between">
-        <Button text="Previous" handleClick={handlePrevious} />
-        <Button text="Next" handleClick={handleNext} />
-      </div>
     </div>
   )
 }

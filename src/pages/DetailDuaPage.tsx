@@ -1,5 +1,4 @@
 import DetailDuaContainer from "../components/DetailDua/DetailDuaContainer";
-import Button from "../components/Button";
 
 const DetailDuaPage = () => {
   return(
