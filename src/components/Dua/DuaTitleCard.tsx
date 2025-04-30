@@ -14,7 +14,7 @@ const DuaTitleCard = ({title}: DuaTitleCardProps) => {
           <p className="text-sm font-bold text-background text-left line-clamp-2">{title.title}</p>
         </div>
         <div className="w-[30px] h-[30px] px-[7px] py-[2.5px]">
-          <ChevronRight />
+          <ChevronRight strokeWidth={3} color="#132519" />
         </div>
       </div>
     </Link>
