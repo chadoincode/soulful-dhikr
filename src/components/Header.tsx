@@ -6,9 +6,11 @@ type HeaderProps = {
 
 const Header = ({title}: HeaderProps) => {
   return(
-    <div className="relative flex items-center py-5">
-      <ChevronLeft size={40} width={50} color="#C4EA57" />
-      <p className="align-center text-secondary text-lg font-bold text-center px-3 leading-snug">{title}</p>
+    <div className="flex items-center py-5">
+      <div className="w-[30px] h-[30px] px-[7px] py-[2.5px]">
+        <ChevronLeft strokeWidth={3} color="#C4EA57" />
+      </div>
+      <p className="align-center text-secondary align-middle text-lg font-bold text-center px-3 leading-snug">{title}</p>
     </div>
   )
 }
