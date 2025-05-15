@@ -4,7 +4,7 @@
   --color-background: #132519;
   --color-primary: #7BF179;
   --color-secondary: #C4EA57;
-  --color-dark: #1D1F1C;
+  --color-dark: #202A23;
   --color-light: #F5FEFB;
   --color-light-gradient: linear-gradient(180deg, #C4EA57 0%, #7BF179 100%);
   --color-dark-gradient: linear-gradient(180deg, #132519 0%, #355935 100%);
@@ -18,5 +18,5 @@ body {
   margin: 0 auto;
   text-align: center;
   place-items: center;
-  background-color: var(--color-background);
+  background-color: var(--color-dark);
 }
