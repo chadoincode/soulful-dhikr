@@ -37,16 +37,15 @@ const DetailDuaContainer = () => {
 
   if(loading){
     return(
-      <div>
+      <div className="flex justify-center items-center mt-[100%]">
         <Loader  />
-        <svg width="40"><use href="#spin" fill="#fff" /></svg>
       </div>
     )
   }
 
   if(error){
     return(
-      <div className="mt-[100%]">
+      <div className="flex justify-center items-center mt-[100%]">
         <h1 className="text-4xl font-bold text-red-600">Error</h1>
       </div>
     )

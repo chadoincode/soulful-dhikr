@@ -38,7 +38,7 @@ const HomePageContainer = () => {
 
   if(loading){
     return(
-      <div className="mt-[100%]">
+      <div className="flex justify-center items-center mt-[100%]">
         <Loader />
       </div>
     )
@@ -46,7 +46,7 @@ const HomePageContainer = () => {
 
   if(error){
     return(
-      <div className="mt-[100%]">
+      <div className="flex justify-center items-center mt-[100%]">
         <h1 className="text-4xl font-bold text-red-600">Error</h1>
       </div>
     )
