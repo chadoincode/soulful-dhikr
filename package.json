@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@modern-js/runtime": "^2.67.5",
     "@tailwindcss/vite": "^4.0.17",
     "flyonui": "^2.1.0",
     "lucide-react": "^0.488.0",
