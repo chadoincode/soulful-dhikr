@@ -1,14 +1,12 @@
 import { ChevronRight } from "lucide-react"
 import { Dua } from "../../types/dua"
 import { Link } from "react-router"
-// import { generateSlug } from "../../utils/GenerateSlug"
 
 type DuaTitleCardProps = {
   title: Dua
 }
 
 const DuaTitleCard = ({title}: DuaTitleCardProps) => {
-  // const slug = generateSlug(title.title)
   return(
     <Link to={`/${title.category}/${title.id}`}>
       <div className="flex justify-between items-center cursor-pointer bg-secondary w-[330px] h-[60px] py-2.5 px-5 rounded-2xl md:w-[600px]">
