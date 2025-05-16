@@ -13,7 +13,8 @@ const HomePageList = ({categories}: HomePageListProps) => {
         <HomePageCard 
           key={category.slug}
           title={category}
-          icon={IconMap[category.slug] || ""}
+          icon={IconMap[category.slug].icon}
+          alt={IconMap[category.slug].alt}
         />
       ))}
     </div>
