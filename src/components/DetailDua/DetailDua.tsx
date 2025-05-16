@@ -14,7 +14,7 @@ const DetailDua = ({dua}: DetailDuaProps) => {
   return(
     <div>
       <Helmet>
-        <meta name="description" content={`Content from ${dua.title}`} />
+        <meta name="description" content="Recite this meaningful dua after completing your prayer. Strengthen your connection with Allah through daily remembrance." />
       </Helmet>
       <Link to={`/${slug}`}>
         <Header title={dua.title}/>
