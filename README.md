@@ -19,7 +19,8 @@ Built using React.js and designed to be clean, mobile-responsive, and user-frien
 - React Router
 - Tailwind CSS
 - Lucide React Icons
-<!-- - Respinner (for loading animation) -->
+- Respinner (for loading animation)
+- React Helmet
 
 
 ## 📡 API Source
